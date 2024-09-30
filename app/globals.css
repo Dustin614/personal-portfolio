@@ -24,9 +24,12 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  /*.paused-loop {
+    animation-play-state: paused;
+  }*/
 }
 
-.parent div {
+.parent > div {
   background-color: var(--background);
   border: 1px solid var(--foreground);
   margin: 1rem;
@@ -40,7 +43,7 @@ body {
   }
 }
 /*medium -> maybe the medium can be better in terms of layout*/
-@media (min-width: 650px) {
+@media (min-width: 700px) {
   .parent {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
