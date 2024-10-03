@@ -5,6 +5,16 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --clip-path-1: polygon(83% 0, 100% 0, 100% 62%, 74% 100%, 0 100%, 0 0);
+  --clip-path-2: polygon(67% 0, 100% 17%, 100% 75%, 68% 100%, 0 100%, 0 0);
+  --clip-path-3: polygon(50% 0, 100% 30%, 100% 0%, 100% 100%, 0 100%, 0 0);
+  --clip-path-4: polygon(13% 0, 100% 0, 100% 87%, 79% 87%, 68% 100%, 32% 100%, 0 100%, 0 6%, 9% 6%);
+  --clip-path-5: polygon(13% 0, 100% 0, 100% 90%, 73% 90%, 61% 100%, 32% 100%, 0 100%, 0 6%, 0 0);
+  --clip-path-6: polygon(13% 0, 100% 0, 100% 87%, 84% 87%, 76% 100%, 32% 100%, 0 100%, 0 6%, 0 0);
+  --clip-path-7: polygon(18% 0, 100% 0, 100% 86%, 82% 100%, 0 100%, 0 14%);
+  --clip-path-8: polygon(12% 0, 100% 0, 100% 65%, 88% 100%, 0 100%, 0 35%);
+  --clip-path-9: polygon(20% 0%, 80% 0%, 100% 20%, 100% 100%, 80% 100%, 20% 100%, 0% 80%, 0 0);
+  --clip-path-10: polygon(14% 0, 100% 0, 100% 35%, 100% 90%, 90% 90%, 86% 100%, 0 100%, 0% 70%, 0 11%, 10% 11%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,6 +28,18 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  /*text-shadow:
+          0 0 0px rgba(255,255,255,0.4),
+          0 0 1px rgba(0,255,0,1),
+          0 0 2px rgba(0,255,0,0.5),
+          3px 0 6px rgba(0,255,0,0.3),
+          -3px 0 6px rgba(0,255,0,0.3),
+          5px 0 8px rgba(0,255,0,0.1),
+          -5px 0 8px rgba(0,255,0,0.1);
+   */
+  padding: 0;
+  margin: 0;
+
 }
 
 @layer utilities {
@@ -29,17 +51,116 @@ body {
   }*/
 }
 
-.parent > div {
-  background-color: var(--background);
-  border: 1px solid var(--foreground);
-  margin: 1rem;
+.child-el {
+  background: var(--background);
+  overflow: hidden;
+  height: calc(100% - 2px);
+  width: calc(100% - 2px);
 }
+
+.parent > div {
+  background: var(--foreground);
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parent > .div1 {
+  clip-path: var(--clip-path-1);
+}
+
+.parent .div1 > .child-el {
+  clip-path: var(--clip-path-1);
+}
+
+.parent > .div2 {
+  clip-path: var(--clip-path-4);
+}
+
+.parent .div2 > .child-el {
+  clip-path: var(--clip-path-4);
+}
+
+.parent > .div3 {
+  clip-path: var(--clip-path-6);
+}
+
+.parent .div3 > .child-el {
+  clip-path: var(--clip-path-6);
+}
+
+.parent > .div4 {
+  clip-path: var(--clip-path-4);
+}
+
+.parent .div4 > .child-el {
+  clip-path: var(--clip-path-4);
+}
+
+.parent > .div5 {
+  clip-path: var(--clip-path-10);
+}
+
+.parent .div5 > .child-el {
+  clip-path: var(--clip-path-10);
+}
+
+.parent > .div6 {
+  clip-path: var(--clip-path-6);
+}
+
+.parent .div6 > .child-el {
+  clip-path: var(--clip-path-6);
+}
+
+.parent > .div7 {
+  clip-path: var(--clip-path-4);
+}
+
+.parent .div7 > .child-el {
+  clip-path: var(--clip-path-4);
+}
+
+.parent > .div8 {
+  clip-path: var(--clip-path-8);
+}
+
+.parent .div8 > .child-el {
+  clip-path: var(--clip-path-8);
+}
+
+.parent > .div9 {
+  clip-path: var(--clip-path-4);
+}
+
+.parent .div9 > .child-el {
+  clip-path: var(--clip-path-4);
+}
+
+.parent > .div10 {
+  clip-path: var(--clip-path-6);
+}
+
+.parent .div10 > .child-el {
+  clip-path: var(--clip-path-6);
+}
+
+.parent > .div11 {
+  clip-path: var(--clip-path-1);
+}
+
+.parent .div11 > .child-el {
+  clip-path: var(--clip-path-1);
+}
+
 /*small*/
 @media (min-width: 0) {
   .parent {
     display: flex;
     flex-direction: column;
     width: 100%;
+
   }
 }
 /*medium -> maybe the medium can be better in terms of layout*/

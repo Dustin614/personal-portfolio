@@ -1,5 +1,3 @@
-
-
 const LocationBanner = () => {
     return (
         <div>Germany</div>
