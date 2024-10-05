@@ -27,9 +27,9 @@ const Home = () => {
                         <div className="child-el">
                             <Heading
                                 title="Frontend Developer"
-                                job="Freelancer"
+                                job=""
                                 name="Dustin Daebritz"
-                                className="h-full"
+                                className="h-60"
                             />
                         </div>
                     </div>
@@ -51,7 +51,7 @@ const Home = () => {
                     <div className="div4">
                         <div className="child-el">
                             <Secrete
-                                message="Dribble AI App Design comming soon"
+                                message=""
                             />
                         </div>
                     </div>

@@ -16,7 +16,7 @@ const Heading = ({title, job, name, className}) => {
                 />
             </div>
             <div>
-                <h1 className="font-bold text-3xl">
+                <h1 className="text-3xl">
                     {title}
                 </h1>
             </div>
@@ -26,7 +26,7 @@ const Heading = ({title, job, name, className}) => {
                 </p>
             </div>
             <div>
-                <p className="text-4xl font-framer">
+                <p className="font-bold text-4xl font-framer">
                     {name}
                 </p>
             </div>

@@ -82,21 +82,6 @@ body {
   clip-path: var(--clip-path-4);
 }
 
-.parent > .div3 {
-  clip-path: var(--clip-path-6);
-}
-
-.parent .div3 > .child-el {
-  clip-path: var(--clip-path-6);
-}
-
-.parent > .div4 {
-  clip-path: var(--clip-path-4);
-}
-
-.parent .div4 > .child-el {
-  clip-path: var(--clip-path-4);
-}
 
 .parent > .div5 {
   clip-path: var(--clip-path-10);
@@ -122,30 +107,7 @@ body {
   clip-path: var(--clip-path-4);
 }
 
-.parent > .div8 {
-  clip-path: var(--clip-path-8);
-}
-
-.parent .div8 > .child-el {
-  clip-path: var(--clip-path-8);
-}
-
-.parent > .div9 {
-  clip-path: var(--clip-path-4);
-}
-
-.parent .div9 > .child-el {
-  clip-path: var(--clip-path-4);
-}
-
-.parent > .div10 {
-  clip-path: var(--clip-path-6);
-}
-
-.parent .div10 > .child-el {
-  clip-path: var(--clip-path-6);
-}
-
+/*
 .parent > .div11 {
   clip-path: var(--clip-path-1);
 }
@@ -153,6 +115,7 @@ body {
 .parent .div11 > .child-el {
   clip-path: var(--clip-path-1);
 }
+*/
 
 /*small*/
 @media (min-width: 0) {
