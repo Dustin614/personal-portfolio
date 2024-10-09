@@ -67,11 +67,9 @@ body {
 }
 
 .parent > .div1 {
-  clip-path: var(--clip-path-1);
 }
 
 .parent .div1 > .child-el {
-  clip-path: var(--clip-path-1);
 }
 
 .parent > .div2 {

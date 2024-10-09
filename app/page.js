@@ -29,51 +29,52 @@ const Home = () => {
                                 title="Frontend Developer"
                                 job=""
                                 name="Dustin Daebritz"
-                                className="h-60"
+                                className="h-auto p-2"
                             />
                         </div>
                     </div>
                     <div className="div2">
                         <div className="child-el">
                             <div
-                                className="flex justify-center items-center text-center h-full w-full font-bold text-5xl">
+                                className="flex justify-center items-center text-center h-full w-full font-bold text-5xl p-2">
                                 Projects
                             </div>
                         </div>
                     </div>
                     <div className="div3">
-                        <div className="child-el">
-                            <Secrete
-                                message="Productivity App comming soon"
-                            />
+                        <div className="child-el p-2">
+                            <Secrete message="Productivity App comming soon"/>
                         </div>
                     </div>
                     <div className="div4">
-                        <div className="child-el">
+                        <div className="child-el p-2">
                             <Secrete
-                                message=""
-                            />
+                                message=""/>
                         </div>
                     </div>
                     <div className="div5 flex align-middle w-auto">
-                        <div className="child-el flex align-middle w-auto">
-                            <Banner/>
+                        <div className="child-el flex align-middle w-auto h-auto py-3">
+                            <Banner />
                         </div>
                     </div>
                     <div className="div6">
-                        <div className="child-el">
-                            <LocationScene/>
+                        <div className="child-el p-2">
+                            <MediaButton
+                                url=""
+                                title="Germany"
+                                icon={<div className="text-8xl">🇩🇪</div>}
+                            />
                         </div>
                     </div>
                     <div className="div7">
-                        <div className="child-el">
+                        <div className="child-el p-2">
                             <Secrete
                                 message="Game comming soon"
                             />
                         </div>
                     </div>
                     <div className="div8">
-                        <div className="child-el">
+                        <div className="child-el p-2">
                             <MediaButton
                                 url="https://github.com/Dustin614"
                                 title="Github"
@@ -82,7 +83,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="div9">
-                        <div className="child-el">
+                        <div className="child-el p-2">
                             <MediaButton
                                 url="https://www.linkedin.com/"
                                 title="LinkedIn"
@@ -91,7 +92,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="div10">
-                        <div className="child-el">
+                        <div className="child-el p-2">
                             <MediaButton
                                 url="mailto:dustindabritz@gmail.com"
                                 title="E-Mail"
@@ -100,7 +101,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="div11">
-                        <div className="child-el">
+                        <div className="child-el p-2">
                             <Secrete
                                 message="more…"
                             />
